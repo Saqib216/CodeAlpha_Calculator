@@ -134,7 +134,8 @@ function calculate() {
 
     try {
         let historyFormatted = expression.replace(/\*/g, '×').replace(/\//g, '÷');
-        historyDisplay.innerText = historyFormatted;
+        historyFormatted = historyFormatted.replace(/([+\-×÷])/g, '<span class="history-op">$1</span>');
+        historyDisplay.innerHTML = historyFormatted;
 
         // Animation class toggle
         historyDisplay.classList.remove("fade-in-effect");

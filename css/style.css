@@ -226,6 +226,12 @@ body {
     animation: quickFade 0.4s ease-in-out;
 }
 
+/* for history operators: */
+.history-op {
+    color: var(--accent-color);
+    font-weight: var(--fw-bold);
+}
+
 @keyframes quickFade {
     from {
         opacity: 0;
