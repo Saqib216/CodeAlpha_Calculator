@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=jet-brains-mono@400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1a1a'/%3E%3Ctext y='70' x='10' font-family='monospace' font-size='65' font-weight='bold' fill='%23ffa726'%3E%2B%3F%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div id="display">
+            <div id="history"></div>
+            <div id="result">0</div>
+        </div>
+
+        <div class="buttons">
+            <div class="btn clear-btn" data-clear="clear">AC</div>
+            <div class="btn operator-btn" data-signFlip="signFlip">+/-</div>
+            <div class="btn operator-btn" data-action="%">%</div>
+            <div class="btn operator-btn" data-action="÷">÷</div>
+            <div class="btn operator-btn" data-action="√">√</div>
+            <div class="btn" data-num="7">7</div>
+            <div class="btn" data-num="8">8</div>
+            <div class="btn" data-num="9">9</div>
+            <div class="btn operator-btn" data-action="×">×</div>
+            <div class="btn operator-btn" data-action="sq">x²</div>
+            <div class="btn" data-num="4">4</div>
+            <div class="btn" data-num="5">5</div>
+            <div class="btn" data-num="6">6</div>
+            <div class="btn operator-btn" data-action="-">-</div>
+            <div class="btn clear-btn" data-backspace="back"><svg style="width: 21px;"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M6.53451 3H20.9993C21.5516 3 21.9993 3.44772 21.9993 4V20C21.9993 20.5523 21.5516 21 20.9993 21H6.53451C6.20015 21 5.88792 20.8329 5.70246 20.5547L0.369122 12.5547C0.145189 12.2188 0.145189 11.7812 0.369122 11.4453L5.70246 3.4453C5.88792 3.1671 6.20015 3 6.53451 3ZM7.06969 5L2.40302 12L7.06969 19H19.9993V5H7.06969ZM12.9993 10.5858L15.8277 7.75736L17.242 9.17157L14.4135 12L17.242 14.8284L15.8277 16.2426L12.9993 13.4142L10.1709 16.2426L8.75668 14.8284L11.5851 12L8.75668 9.17157L10.1709 7.75736L12.9993 10.5858Z">
+                    </path>
+                </svg></div>
+            <div class="btn" data-num="1">1</div>
+            <div class="btn" data-num="2">2</div>
+            <div class="btn" data-num="3">3</div>
+            <div class="btn operator-btn" data-action="+">+</div>
+            <div class="btn" data-num="0">0</div>
+            <div class="btn" data-num=".">.</div>
+            <div class="btn equals-btn" data-equals="equals">=</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
