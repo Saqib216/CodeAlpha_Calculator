@@ -145,6 +145,7 @@ body {
     transition: var(--transition);
     color: #e0e0e0;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn:focus-visible {
